@@ -16,15 +16,15 @@
   <meta name="author" content="zzxLLL">
   <meta name="keywords" content="">
   
-    <meta name="description" content="神仙分治，吊打 LCT 做法。 对时间线进行分治。假设现在在处理 [l,r][l,r][l,r] 操作，称在 [l,r][l,r][l,r] 中涉及的边（这条边存在的时间起点或终点在 [l,r][l,r][l,r]）为动态边，否则为静态边。 动态边暂时不知道是否在 MST 中，但是因为 [l,r][l,r][l,r] 的操作不涉及静态边，可以考虑先从静态边中挑出一些一定在&#x2F;不在 MST 的边。具体">
+    <meta name="description" content="Link 神仙分治，吊打 LCT 做法。 对时间线进行分治。假设现在在处理 [l,r][l,r][l,r] 操作，称在 [l,r][l,r][l,r] 中涉及的边（这条边存在的时间起点或终点在 [l,r][l,r][l,r]）为动态边，否则为静态边。 动态边暂时不知道是否在 MST 中，但是因为 [l,r][l,r][l,r] 的操作不涉及静态边，可以考虑先从静态边中挑出一些一定在&#x2F;不在 MST">
 <meta property="og:type" content="article">
 <meta property="og:title" content="P3206 [HNOI2010] 城市建设">
 <meta property="og:url" content="http://zzxllll.github.io/2024/01/05/P3206-HNOI2010-%E5%9F%8E%E5%B8%82%E5%BB%BA%E8%AE%BE/index.html">
 <meta property="og:site_name" content="zzxLLL&#39;s Blog">
-<meta property="og:description" content="神仙分治，吊打 LCT 做法。 对时间线进行分治。假设现在在处理 [l,r][l,r][l,r] 操作，称在 [l,r][l,r][l,r] 中涉及的边（这条边存在的时间起点或终点在 [l,r][l,r][l,r]）为动态边，否则为静态边。 动态边暂时不知道是否在 MST 中，但是因为 [l,r][l,r][l,r] 的操作不涉及静态边，可以考虑先从静态边中挑出一些一定在&#x2F;不在 MST 的边。具体">
+<meta property="og:description" content="Link 神仙分治，吊打 LCT 做法。 对时间线进行分治。假设现在在处理 [l,r][l,r][l,r] 操作，称在 [l,r][l,r][l,r] 中涉及的边（这条边存在的时间起点或终点在 [l,r][l,r][l,r]）为动态边，否则为静态边。 动态边暂时不知道是否在 MST 中，但是因为 [l,r][l,r][l,r] 的操作不涉及静态边，可以考虑先从静态边中挑出一些一定在&#x2F;不在 MST">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2024-01-05T12:35:54.000Z">
-<meta property="article:modified_time" content="2024-01-16T00:55:16.000Z">
+<meta property="article:modified_time" content="2024-02-20T07:54:26.000Z">
 <meta property="article:author" content="zzxLLL">
 <meta property="article:tag" content="分治">
 <meta property="article:tag" content="线段树分治">
@@ -227,7 +227,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          937 字
+          938 字
         
       </span>
     
@@ -280,7 +280,8 @@
             
               <div class="markdown-body">
                 
-                <p>神仙分治，吊打 LCT 做法。</p>
+                <p><a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P3206">Link</a></p>
+<p>神仙分治，吊打 LCT 做法。</p>
 <p>对时间线进行分治。假设现在在处理 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">[</mo><mi>l</mi><mo separator="true">,</mo><mi>r</mi><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">[l,r]</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">[</span><span class="mord mathnormal" style="margin-right:0.01968em;">l</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">r</span><span class="mclose">]</span></span></span></span> 操作，称在 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">[</mo><mi>l</mi><mo separator="true">,</mo><mi>r</mi><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">[l,r]</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">[</span><span class="mord mathnormal" style="margin-right:0.01968em;">l</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">r</span><span class="mclose">]</span></span></span></span> 中涉及的边（这条边存在的时间起点或终点在 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">[</mo><mi>l</mi><mo separator="true">,</mo><mi>r</mi><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">[l,r]</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">[</span><span class="mord mathnormal" style="margin-right:0.01968em;">l</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">r</span><span class="mclose">]</span></span></span></span>）为<strong>动态边</strong>，否则为<strong>静态边</strong>。</p>
 <p>动态边暂时不知道是否在 MST 中，但是因为 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">[</mo><mi>l</mi><mo separator="true">,</mo><mi>r</mi><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">[l,r]</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">[</span><span class="mord mathnormal" style="margin-right:0.01968em;">l</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">r</span><span class="mclose">]</span></span></span></span> 的操作不涉及静态边，可以考虑先从静态边中挑出一些<strong>一定在/不在 MST 的边</strong>。具体的：</p>
 <ul>
