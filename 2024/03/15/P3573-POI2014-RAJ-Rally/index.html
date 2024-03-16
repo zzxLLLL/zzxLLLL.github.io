@@ -16,15 +16,15 @@
   <meta name="author" content="zzxLLL">
   <meta name="keywords" content="">
   
-    <meta name="description" content="厉害题。 设 s0&#x2F;1,us_{0&#x2F;1,u}s0&#x2F;1,u​ 为以 uuu 为终点&#x2F;起点的最长路。 按照图的拓扑序枚举节点。假设拓扑序 &lt;i&lt;i&lt;i 的点的集合为 AAA，拓扑序 ≥i\ge i≥i 的点集合为 BBB。那么候选的最长路：  s0,us_{0,u}s0,u​，当 u∈Au\in Au∈A。 s1,vs_{1,v}s1,v​，当 v∈Bv\in Bv∈B。 s0,u+">
+    <meta name="description" content="link 厉害题。 设 s0&#x2F;1,us_{0&#x2F;1,u}s0&#x2F;1,u​ 为以 uuu 为终点&#x2F;起点的最长路。 按照图的拓扑序枚举节点。假设拓扑序 &lt;i&lt;i&lt;i 的点的集合为 AAA，拓扑序 ≥i\ge i≥i 的点集合为 BBB。那么候选的最长路：  s0,us_{0,u}s0,u​，当 u∈Au\in Au∈A。 s1,vs_{1,v}s1,v​，当 v∈Bv\in Bv∈B。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="P3573 [POI2014] RAJ-Rally">
 <meta property="og:url" content="http://zzxllll.github.io/2024/03/15/P3573-POI2014-RAJ-Rally/index.html">
 <meta property="og:site_name" content="zzxLLL&#39;s Blog">
-<meta property="og:description" content="厉害题。 设 s0&#x2F;1,us_{0&#x2F;1,u}s0&#x2F;1,u​ 为以 uuu 为终点&#x2F;起点的最长路。 按照图的拓扑序枚举节点。假设拓扑序 &lt;i&lt;i&lt;i 的点的集合为 AAA，拓扑序 ≥i\ge i≥i 的点集合为 BBB。那么候选的最长路：  s0,us_{0,u}s0,u​，当 u∈Au\in Au∈A。 s1,vs_{1,v}s1,v​，当 v∈Bv\in Bv∈B。 s0,u+">
+<meta property="og:description" content="link 厉害题。 设 s0&#x2F;1,us_{0&#x2F;1,u}s0&#x2F;1,u​ 为以 uuu 为终点&#x2F;起点的最长路。 按照图的拓扑序枚举节点。假设拓扑序 &lt;i&lt;i&lt;i 的点的集合为 AAA，拓扑序 ≥i\ge i≥i 的点集合为 BBB。那么候选的最长路：  s0,us_{0,u}s0,u​，当 u∈Au\in Au∈A。 s1,vs_{1,v}s1,v​，当 v∈Bv\in Bv∈B。">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2024-03-15T11:56:01.000Z">
-<meta property="article:modified_time" content="2024-03-15T12:15:44.000Z">
+<meta property="article:modified_time" content="2024-03-16T01:13:12.000Z">
 <meta property="article:author" content="zzxLLL">
 <meta property="article:tag" content="最短路">
 <meta property="article:tag" content="图论">
@@ -227,7 +227,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          631 字
+          632 字
         
       </span>
     
@@ -280,7 +280,8 @@
             
               <div class="markdown-body">
                 
-                <p>厉害题。</p>
+                <p><a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P3573">link</a></p>
+<p>厉害题。</p>
 <p>设 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>s</mi><mrow><mn>0</mn><mi mathvariant="normal">/</mi><mn>1</mn><mo separator="true">,</mo><mi>u</mi></mrow></msub></mrow><annotation encoding="application/x-tex">s_{0/1,u}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7858em;vertical-align:-0.3552em;"></span><span class="mord"><span class="mord mathnormal">s</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3448em;"><span style="top:-2.5198em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">0/1</span><span class="mpunct mtight">,</span><span class="mord mathnormal mtight">u</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.3552em;"><span></span></span></span></span></span></span></span></span></span> 为以 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi></mrow><annotation encoding="application/x-tex">u</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">u</span></span></span></span> 为终点/起点的最长路。</p>
 <p>按照图的拓扑序枚举节点。假设拓扑序 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&lt;</mo><mi>i</mi></mrow><annotation encoding="application/x-tex">&lt;i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5782em;vertical-align:-0.0391em;"></span><span class="mrel">&lt;</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6595em;"></span><span class="mord mathnormal">i</span></span></span></span> 的点的集合为 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi></mrow><annotation encoding="application/x-tex">A</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span></span></span></span>，拓扑序 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>≥</mo><mi>i</mi></mrow><annotation encoding="application/x-tex">\ge i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7719em;vertical-align:-0.136em;"></span><span class="mrel">≥</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6595em;"></span><span class="mord mathnormal">i</span></span></span></span> 的点集合为 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi></mrow><annotation encoding="application/x-tex">B</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span></span></span></span>。那么候选的最长路：</p>
 <ul>
