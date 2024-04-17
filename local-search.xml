@@ -4,6 +4,19 @@
   
   
   <entry>
+    <title></title>
+    <link href="/2024/04/17/20240419/"/>
+    <url>/2024/04/17/20240419/</url>
+    
+    <content type="html"><![CDATA[<h1>1</h1><p><a href="https://www.luogu.com.cn/problem/P3369">1</a></p><p><a href="https://www.luogu.com.cn/problem/P3391">2</a></p><p><a href="https://www.luogu.com.cn/problem/P4008">3</a></p><p><a href="https://www.luogu.com.cn/problem/P2710">4</a></p><p><a href="https://www.luogu.com.cn/problem/P3987">5</a></p><h1>2</h1><p><a href="https://www.luogu.com.cn/problem/P4690">1</a></p><h1>3</h1><p><a href="https://mna.wang/contest/518/problem/2">1</a></p><p><a href="http://ssloj.cn/contest/751/problem/2">2</a></p><p><a href="https://www.luogu.com.cn/problem/P5066">3</a></p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>P2483 【模板】k 短路 / [SDOI2010] 魔法猪学院</title>
     <link href="/2024/04/16/Luogu-P2483/"/>
     <url>/2024/04/16/Luogu-P2483/</url>
@@ -182,11 +195,11 @@
     
     <tags>
       
+      <tag>分治</tag>
+      
       <tag>点分治</tag>
       
       <tag>数学</tag>
-      
-      <tag>分治</tag>
       
     </tags>
     
