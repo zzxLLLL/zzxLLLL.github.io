@@ -17,8 +17,8 @@
   <meta name="keywords" content="">
   
     <meta property="og:type" content="website">
-<meta property="og:title" content="归档">
-<meta property="og:url" content="http://zzxllll.github.io/archives/2024/01/index.html">
+<meta property="og:title" content="zzxLLL&#39;s Blog">
+<meta property="og:url" content="http://zzxllll.github.io/page/2/index.html">
 <meta property="og:site_name" content="zzxLLL&#39;s Blog">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:author" content="zzxLLL">
@@ -26,7 +26,7 @@
   
   
   
-  <title>归档 - zzxLLL&#39;s Blog</title>
+  <title>zzxLLL&#39;s Blog</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -84,7 +84,7 @@
   <header>
     
 
-<div class="header-inner" style="height: 60vh;">
+<div class="header-inner" style="height: 100vh;">
   <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand" href="/">
@@ -190,13 +190,17 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="归档"></span>
+            <span id="subtitle" data-typed-text="zzxLLL&#39;s Blog"></span>
           
         </div>
 
         
       </div>
 
+      
+        <div class="scroll-down-bar">
+          <i class="iconfont icon-arrowdown"></i>
+        </div>
       
     </div>
   </div>
@@ -210,54 +214,208 @@
     
       <div class="container nopadding-x-md">
         <div id="board"
-          >
+          style="margin-top: 0">
           
           <div class="container">
             <div class="row">
               <div class="col-12 col-md-10 m-auto">
                 
 
-<div class="list-group">
-  <p class="h4">共计 13 篇文章</p>
-  <hr>
-  
-  
+
+  <div class="row mx-auto index-card">
     
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2024/01/10/Luogu-P5163/" target="_self">
+          P5163 WD与地图
+        </a>
+      </h2>
+
       
-      <p class="h5">2024</p>
-    
-    <a href="/2024/01/16/CF-1523H/" class="list-group-item list-group-item-action">
-      <time>01-16</time>
-      <div class="list-group-item-title">CF1523H Hopping Around the Array</div>
-    </a>
+      <a class="index-excerpt index-excerpt__noimg" href="/2024/01/10/Luogu-P5163/" target="_self">
+        <div>
+          Link 删边不好操作，将操作序列反转，删边变成加边。 简化问题，考虑无向图时怎么做，显然可以用并查集：当连接边 (u,v)(u,v)(u,v) 时，若原本 u,vu,vu,v 不连通，那么与 uuu 连通的所有点和与 vvv 连通的所有点，在此刻连通，将它们并入同一个集合。查询的话用线段树合并即可。 但是这题是有向图，显然一个地区是一个极大强连通分量。考虑无向图时，连接 (u,v)(u,v)(u
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2024-01-10 13:35" pubdate>
+              2024-01-10
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
   
     
-    <a href="/2024/01/16/CF-566C/" class="list-group-item list-group-item-action">
-      <time>01-16</time>
-      <div class="list-group-item-title">CF566C Logistical Questions</div>
-    </a>
+      <span class="category-chain">
+        
+  <a href="/categories/%E6%B4%9B%E8%B0%B7/" class="category-chain-item">洛谷</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E6%95%B4%E4%BD%93%E4%BA%8C%E5%88%86/">#整体二分</a>
+            
+              <a href="/tags/%E7%BA%BF%E6%AE%B5%E6%A0%91%E5%90%88%E5%B9%B6/">#线段树合并</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2024/01/05/Luogu-P3206/" target="_self">
+          P3206 [HNOI2010] 城市建设
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2024/01/05/Luogu-P3206/" target="_self">
+        <div>
+          Link 神仙分治，吊打 LCT 做法。 对时间线进行分治。假设现在在处理 [l,r][l,r][l,r] 操作，称在 [l,r][l,r][l,r] 中涉及的边（这条边存在的时间起点或终点在 [l,r][l,r][l,r]）为动态边，否则为静态边。 动态边暂时不知道是否在 MST 中，但是因为 [l,r][l,r][l,r] 的操作不涉及静态边，可以考虑先从静态边中挑出一些一定在/不在 MST
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2024-01-05 20:35" pubdate>
+              2024-01-05
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
   
     
-    <a href="/2024/01/10/Luogu-P5163/" class="list-group-item list-group-item-action">
-      <time>01-10</time>
-      <div class="list-group-item-title">P5163 WD与地图</div>
-    </a>
+      <span class="category-chain">
+        
+  <a href="/categories/%E6%B4%9B%E8%B0%B7/" class="category-chain-item">洛谷</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%88%86%E6%B2%BB/">#分治</a>
+            
+              <a href="/tags/%E7%BA%BF%E6%AE%B5%E6%A0%91%E5%88%86%E6%B2%BB/">#线段树分治</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2024/01/05/CF-1817F/" target="_self">
+          CF1817F Entangled Substrings
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2024/01/05/CF-1817F/" target="_self">
+        <div>
+          Link(Luogu) | Link(Codeforces) 很好的 SAM 题，需要一些对 SAM 和 endpos⁡\operatorname{endpos}endpos 等价类的理解。 下面令 maxlen⁡A\operatorname{maxlen}_AmaxlenA​ 是等价类 AAA 中最长字符串的长度，minlen⁡A\operatorname{minlen}_AminlenA​ 是
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2024-01-05 14:03" pubdate>
+              2024-01-05
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
   
     
-    <a href="/2024/01/05/Luogu-P3206/" class="list-group-item list-group-item-action">
-      <time>01-05</time>
-      <div class="list-group-item-title">P3206 [HNOI2010] 城市建设</div>
-    </a>
+      <span class="category-chain">
+        
+  <a href="/categories/Codeforces/" class="category-chain-item">Codeforces</a>
   
+  
+
+      </span>
     
-    <a href="/2024/01/05/CF-1817F/" class="list-group-item list-group-item-action">
-      <time>01-05</time>
-      <div class="list-group-item-title">CF1817F Entangled Substrings</div>
-    </a>
   
-</div>
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/SAM/">#SAM</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
 
 
+
+  <nav aria-label="navigation">
+    <span class="pagination" id="pagination">
+      <a class="extend prev" rel="prev" href="/"><i class="iconfont icon-arrowleft"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
+    </span>
+  </nav>
 
 
 
