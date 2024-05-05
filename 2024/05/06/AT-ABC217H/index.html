@@ -24,7 +24,7 @@
 <meta property="og:description" content="Luogu | AtCoder 设 fi,jf_{i,j}fi,j​ 为时刻 TiT_iTi​ 到达点 jjj 所受到的最小伤害。显然有 dp 转移： fi,j&#x3D;{min⁡∣k−j∣≤Ti−Ti−1(fi−1,k)+max⁡(0,Xi−j)Di&#x3D;0min⁡∣k−j∣≤Ti−Ti−1(fi−1,k)+max⁡(0,j−Xi)Di&#x3D;1f_{i,j}&#x3D;\begin{cases}     \min\lim">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2024-05-05T18:44:51.000Z">
-<meta property="article:modified_time" content="2024-05-05T19:17:40.000Z">
+<meta property="article:modified_time" content="2024-05-05T19:29:56.000Z">
 <meta property="article:author" content="zzxLLL">
 <meta property="article:tag" content="dp">
 <meta property="article:tag" content="slope trick">
@@ -227,7 +227,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          503 字
+          700 字
         
       </span>
     
@@ -238,7 +238,7 @@
         
         
         
-          5 分钟
+          6 分钟
         
       </span>
     
@@ -295,6 +295,16 @@
 </ul>
 <p>时间复杂度 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mi>n</mi><mi>log</mi><mo>⁡</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(n\log n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mop">lo<span style="margin-right:0.01389em;">g</span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">n</span><span class="mclose">)</span></span></span></span>。</p>
 
+    <div class="fold">
+      <div class="fold-title fold-info collapsed" data-toggle="collapse" href="#collapse-65ad56e5" role="button" aria-expanded="false" aria-controls="collapse-65ad56e5">
+        <div class="fold-arrow">▶</div>Code
+      </div>
+      <div class="fold-collapse collapse" id="collapse-65ad56e5">
+        <div class="fold-content">
+          <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><code class="hljs cpp"><span class="hljs-keyword">typedef</span> <span class="hljs-type">long</span> <span class="hljs-type">long</span> LL;<br><span class="hljs-type">const</span> <span class="hljs-type">int</span> M = <span class="hljs-number">2e5</span> + <span class="hljs-number">10</span>;<br><br><span class="hljs-type">int</span> n, T[M], D[M], X[M];<br><br><span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> </span>&#123;<br>    n = <span class="hljs-built_in">read</span>();<br>    <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i = <span class="hljs-number">1</span>; i &lt;= n; i++)<br>        T[i] = <span class="hljs-built_in">read</span>(), D[i] = <span class="hljs-built_in">read</span>(), X[i] = <span class="hljs-built_in">read</span>();<br>    <br>    std::priority_queue&lt;LL, std::vector&lt;LL&gt;, std::less&lt;LL&gt; &gt; ql;<br>    std::priority_queue&lt;LL, std::vector&lt;LL&gt;, std::greater&lt;LL&gt; &gt; qr;<br>    <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i = <span class="hljs-number">1</span>; i &lt;= n; i++)<br>        ql.<span class="hljs-built_in">emplace</span>(<span class="hljs-number">0</span>), qr.<span class="hljs-built_in">emplace</span>(<span class="hljs-number">0</span>); <span class="hljs-comment">// k &lt;= n</span><br>    <br>    LL mn = <span class="hljs-number">0</span>, tagl = <span class="hljs-number">0</span>, tagr = <span class="hljs-number">0</span>;<br>    <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i = <span class="hljs-number">1</span>; i &lt;= n; i++) &#123;<br>        <span class="hljs-type">int</span> d = T[i] - T[i - <span class="hljs-number">1</span>];<br>        tagl -= d, tagr += d;<br>        <span class="hljs-keyword">if</span> (D[i] == <span class="hljs-number">0</span>) &#123;<br>            <span class="hljs-comment">// Fi(x): \_</span><br>            <span class="hljs-keyword">if</span> (X[i] &gt; qr.<span class="hljs-built_in">top</span>() + tagr) &#123;<br>                mn += X[i] - (qr.<span class="hljs-built_in">top</span>() + tagr);<br>                ql.<span class="hljs-built_in">emplace</span>(qr.<span class="hljs-built_in">top</span>() + tagr - tagl);<br>                qr.<span class="hljs-built_in">emplace</span>(X[i] - tagr), qr.<span class="hljs-built_in">pop</span>();<br>            &#125; <span class="hljs-keyword">else</span> &#123;<br>                ql.<span class="hljs-built_in">emplace</span>(X[i] - tagl);<br>            &#125;<br>        &#125; <span class="hljs-keyword">else</span> &#123;<br>            <span class="hljs-comment">// Fi(x): _/</span><br>            <span class="hljs-keyword">if</span> (X[i] &lt; ql.<span class="hljs-built_in">top</span>() + tagl) &#123;<br>                mn += (ql.<span class="hljs-built_in">top</span>() + tagl) - X[i];<br>                qr.<span class="hljs-built_in">emplace</span>(ql.<span class="hljs-built_in">top</span>() + tagl - tagr);<br>                ql.<span class="hljs-built_in">emplace</span>(X[i] - tagl), ql.<span class="hljs-built_in">pop</span>();<br>            &#125; <span class="hljs-keyword">else</span> &#123;<br>                qr.<span class="hljs-built_in">emplace</span>(X[i] - tagr);<br>            &#125;<br>        &#125;<br>    &#125;<br>    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;%lld\n&quot;</span>, mn);<br>    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br></code></pre></td></tr></table></figure>
+        </div>
+      </div>
+    </div>
                 
               </div>
             
