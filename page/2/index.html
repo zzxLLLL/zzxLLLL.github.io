@@ -225,13 +225,7 @@
   <div class="row mx-auto index-card">
     
     
-      <div class="col-12 col-md-4 m-auto index-img">
-        <a href="/2024/01/16/CF-1523H/" target="_self">
-          <img src="/img/sunarrgx.png" srcset="/img/loading.gif" lazyload alt="CF1523H Hopping Around the Array">
-        </a>
-      </div>
-    
-    <article class="col-12 col-md-8 mx-auto index-info">
+    <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
         <a href="/2024/01/16/CF-1523H/" target="_self">
@@ -240,7 +234,7 @@
       </h2>
 
       
-      <a class="index-excerpt " href="/2024/01/16/CF-1523H/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/2024/01/16/CF-1523H/" target="_self">
         <div>
           Link(Luogu) | Link(Codeforces) 整体倍增(?) 显然地，如果从 xxx 开始走 kkk 步能到达最远的点为 yyy，那么 kkk 步内 [x,y][x,y][x,y] 内的所有点都可以到达。 考虑 dp。设 fx,i,jf_{x,i,j}fx,i,j​ 表示从 xxx 开始，走了 iii 步，其中删掉 jjj 个点，能够到达的最远点。对于每个询问，都二分找到最小的 k
         </div>
@@ -294,13 +288,7 @@
   <div class="row mx-auto index-card">
     
     
-      <div class="col-12 col-md-4 m-auto index-img">
-        <a href="/2024/01/16/CF-566C/" target="_self">
-          <img src="/img/sunarrgx.png" srcset="/img/loading.gif" lazyload alt="CF566C Logistical Questions">
-        </a>
-      </div>
-    
-    <article class="col-12 col-md-8 mx-auto index-info">
+    <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
         <a href="/2024/01/16/CF-566C/" target="_self">
@@ -309,7 +297,7 @@
       </h2>
 
       
-      <a class="index-excerpt " href="/2024/01/16/CF-566C/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/2024/01/16/CF-566C/" target="_self">
         <div>
           Link(Luogu) | Link(Codeforces) 凸性函数好题。 假设有点 xxx 在路径 (a,b)(a,b)(a,b) 上（可以在路径的中间），距离 aaa 点距离为 ddd，显然对于任意 u∈[1,n]u\in[1,n]u∈[1,n]，dis⁡32(x,u)\operatorname{dis}^\frac{3}{2}(x,u)dis23​(x,u) 是一个下凸函数。 多个下凸函数
         </div>
@@ -365,13 +353,7 @@
   <div class="row mx-auto index-card">
     
     
-      <div class="col-12 col-md-4 m-auto index-img">
-        <a href="/2024/01/10/Luogu-P5163/" target="_self">
-          <img src="/img/sunarrgx.png" srcset="/img/loading.gif" lazyload alt="P5163 WD与地图">
-        </a>
-      </div>
-    
-    <article class="col-12 col-md-8 mx-auto index-info">
+    <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
         <a href="/2024/01/10/Luogu-P5163/" target="_self">
@@ -380,7 +362,7 @@
       </h2>
 
       
-      <a class="index-excerpt " href="/2024/01/10/Luogu-P5163/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/2024/01/10/Luogu-P5163/" target="_self">
         <div>
           Link 删边不好操作，将操作序列反转，删边变成加边。 简化问题，考虑无向图时怎么做，显然可以用并查集：当连接边 (u,v)(u,v)(u,v) 时，若原本 u,vu,vu,v 不连通，那么与 uuu 连通的所有点和与 vvv 连通的所有点，在此刻连通，将它们并入同一个集合。查询的话用线段树合并即可。 但是这题是有向图，显然一个地区是一个极大强连通分量。考虑无向图时，连接 (u,v)(u,v)(u
         </div>
@@ -434,13 +416,7 @@
   <div class="row mx-auto index-card">
     
     
-      <div class="col-12 col-md-4 m-auto index-img">
-        <a href="/2024/01/05/Luogu-P3206/" target="_self">
-          <img src="/img/sunarrgx.png" srcset="/img/loading.gif" lazyload alt="P3206 [HNOI2010] 城市建设">
-        </a>
-      </div>
-    
-    <article class="col-12 col-md-8 mx-auto index-info">
+    <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
         <a href="/2024/01/05/Luogu-P3206/" target="_self">
@@ -449,7 +425,7 @@
       </h2>
 
       
-      <a class="index-excerpt " href="/2024/01/05/Luogu-P3206/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/2024/01/05/Luogu-P3206/" target="_self">
         <div>
           Link 神仙分治，吊打 LCT 做法。 对时间线进行分治。假设现在在处理 [l,r][l,r][l,r] 操作，称在 [l,r][l,r][l,r] 中涉及的边（这条边存在的时间起点或终点在 [l,r][l,r][l,r]）为动态边，否则为静态边。 动态边暂时不知道是否在 MST 中，但是因为 [l,r][l,r][l,r] 的操作不涉及静态边，可以考虑先从静态边中挑出一些一定在/不在 MST
         </div>
@@ -503,13 +479,7 @@
   <div class="row mx-auto index-card">
     
     
-      <div class="col-12 col-md-4 m-auto index-img">
-        <a href="/2024/01/05/CF-1817F/" target="_self">
-          <img src="/img/sunarrgx.png" srcset="/img/loading.gif" lazyload alt="CF1817F Entangled Substrings">
-        </a>
-      </div>
-    
-    <article class="col-12 col-md-8 mx-auto index-info">
+    <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
         <a href="/2024/01/05/CF-1817F/" target="_self">
@@ -518,7 +488,7 @@
       </h2>
 
       
-      <a class="index-excerpt " href="/2024/01/05/CF-1817F/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/2024/01/05/CF-1817F/" target="_self">
         <div>
           Link(Luogu) | Link(Codeforces) 很好的 SAM 题，需要一些对 SAM 和 endpos⁡\operatorname{endpos}endpos 等价类的理解。 下面令 maxlen⁡A\operatorname{maxlen}_AmaxlenA​ 是等价类 AAA 中最长字符串的长度，minlen⁡A\operatorname{minlen}_AminlenA​ 是
         </div>
